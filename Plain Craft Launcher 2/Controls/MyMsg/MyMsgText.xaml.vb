@@ -13,6 +13,8 @@ Public Class MyMsgText
             MyConverter = Converter
             LabTitle.Text = Converter.Title
             LabCaption.Text = Converter.Text
+            LabFooter.Text = Converter.Footer
+            LabFooter.Visibility = If(String.IsNullOrEmpty(Converter.Footer), Visibility.Collapsed, Visibility.Visible)
             Btn1.Text = Converter.Button1
             If Converter.IsWarn Then
                 Btn1.ColorType = MyButton.ColorState.Red

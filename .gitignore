@@ -342,3 +342,6 @@ ASALocalRun/
 healthchecksdb
 
 MaskFiles/
+
+# Local credentials and private configuration (never commit).
+/.local/
